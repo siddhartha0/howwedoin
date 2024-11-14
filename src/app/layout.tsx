@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { poppins, geistMono, geistSans, inter } from "@/lib";
+import { poppins } from "@/lib";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -14,7 +14,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.className}  antialiased`}>{children}</body>
+      <body
+        className={`${poppins.className}  antialiased `}
+        suppressHydrationWarning
+      >
+        {children}
+      </body>
     </html>
   );
 }
