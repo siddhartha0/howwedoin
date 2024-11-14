@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { inter, poppins } from "@/lib";
+import { poppins, geistMono, geistSans, inter } from "@/lib";
 import "./globals.css";
 
 export const metadata: Metadata = {
